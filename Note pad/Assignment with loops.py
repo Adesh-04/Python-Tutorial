@@ -1,52 +1,70 @@
 x=int(input("1st Number :"))
 y=int(input("2nd Number :"))
 sum=x+y
-print sum :
+print (sum) 
 
-i=0:
+i=0
 list1=[]
-for i in range (5) :
+to_str = str(x)
+leng = len(to_str)
+for i in range (leng) :
     i=i+1
     b=x%10
     c=x-b
     x=c/10
-    list1.append(b)
+    int_val = int(b)
+    list1.append(int_val)
     if c==0:
         continue;
     if i==0:
         break;
-print  " " ,list1[4],list1[3],list1[2],list1[1],list1[0]
+print("\t", end=" ")
+for ele in list1:
+    print(ele,sep=" " , end=" ")
+print()
 
 print("+")
 
 
 q=0
 list2=[]
-for q in range (5) :
+to_str = str(y)
+leng = len(to_str)
+for q in range (leng) :
     q+=1
     b1=y%10
     c1=y-b1
     y=c1/10
-    list2.append(b1)
+    int_val2 = int(b1)
+    list2.append(int_val2)
     if c1==0:
         continue;
     if q==0:
         break;
-print  " " ,list2[4],list2[3],list2[2],list2[1],list2[0]
+print("\t", end=" ")
+for ele in list2:
+    print(ele,sep=" " , end=" ")
+print( )
 
-print("_"*15)
+print("_"*25)
 
 
 w=0
 list3=[]
-for w in range (5) :
+to_str = str(sum)
+leng = len(to_str)
+for w in range (leng) :
     w+=1
     b3=sum%10
     a3=sum-b3
     sum=a3/10
-    list3.append(b3)
+    int_val3 = int(b3)
+    list3.append(int_val3)
     if a3==0:
         continue;
     if w==0:
         break;
-print  " " ,list3[4],list3[3],list3[2],list3[1],list3[0]
+print("\t", end=" ")
+for ele in list3:
+    print(ele,sep=" " , end=" ")
+print()

@@ -4,7 +4,7 @@ def Arithmatic_arranger():
     print ("\t \n \t Welcome\n")
     a11=int(input("Expression counts:"))
     print ("Only Addition and subtraction")
-    print ("Use \" for Expressions" )
+    # print ("Use for Expressions" )
     int(a11)
     while a11>0:
         a12=input("Enter:")

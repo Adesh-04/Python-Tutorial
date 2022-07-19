@@ -1,6 +1,6 @@
 def Collaz(number):
     try:
-        number=input("Enter number: ")
+        number=int(input("Enter number: "))
     except NameError and TypeError:
         print ('Invalid value')
     

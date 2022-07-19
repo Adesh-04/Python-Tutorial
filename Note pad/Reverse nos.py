@@ -14,4 +14,4 @@ while x>0:
 while i>0:
     a=list1[i-1]
     i-=1
-    print (a)
+    print (int(a))
