@@ -2,7 +2,7 @@ from bin_dec import bin_dec
 from dec_oct import dec_oct
 from dec_hex import dec_hex
 from oct_dec import oct_dec
-from dec_bin import dec_bin  ##Broken
+from dec_bin import dec_bin 
 from hex_dec import hex_dec
 
 ## binary to octal 

@@ -9,7 +9,7 @@ def dec_hex(decimal):
         hexadecimal = hexadecimal + str(remainder)
 
         if result > 16:
-            divideBySixteen(result,hexadecimal)
+            return divideBySixteen(result,hexadecimal)
         elif result <= 16:
             hexadecimal = hexadecimal + str(result)
             return hexadecimal[-1::-1]
@@ -19,5 +19,5 @@ def dec_hex(decimal):
 
 
 if __name__ == '__main__':
-    val = dec_hex(16)
+    val = dec_hex(9121)
     print(val)

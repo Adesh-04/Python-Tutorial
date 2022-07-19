@@ -9,7 +9,7 @@ def dec_bin(decimal):
         binary = binary + str(remainder)
 
         if result >= 2:
-            divideByTwo(result,binary)
+            return divideByTwo(result,binary)
         elif result < 2:
             binary = binary + str(result)
             return binary[-1::-1]
@@ -19,5 +19,5 @@ def dec_bin(decimal):
 
 
 if __name__ == '__main__':
-    val = dec_bin(16)
+    val = dec_bin(2)
     print(val)

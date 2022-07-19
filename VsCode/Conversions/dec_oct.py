@@ -1,5 +1,6 @@
 
 def dec_oct(decimal):
+    decimal = int(decimal)
     octal = ''
 
     def divideByEight(num,octal):
@@ -11,7 +12,7 @@ def dec_oct(decimal):
         # print(result,remainder,octal)
 
         if result > 8:
-            divideByEight(result)
+            return divideByEight(result,octal)
         elif result <= 8:
             octal = octal + str(result)
             return octal[-1::-1]
@@ -22,5 +23,5 @@ def dec_oct(decimal):
     return val
 
 if __name__ == '__main__':
-    oct = dec_oct(9)
+    oct = dec_oct(100)
     print(oct)
