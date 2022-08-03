@@ -23,5 +23,5 @@ def dec_oct(decimal):
     return val
 
 if __name__ == '__main__':
-    oct = dec_oct(100)
+    oct = dec_oct(128)
     print(oct)

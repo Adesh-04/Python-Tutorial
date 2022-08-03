@@ -19,5 +19,5 @@ def dec_hex(decimal):
 
 
 if __name__ == '__main__':
-    val = dec_hex(9121)
+    val = dec_hex(128)
     print(val)

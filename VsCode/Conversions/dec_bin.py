@@ -19,5 +19,5 @@ def dec_bin(decimal):
 
 
 if __name__ == '__main__':
-    val = dec_bin(2)
+    val = dec_bin(128)
     print(val)
