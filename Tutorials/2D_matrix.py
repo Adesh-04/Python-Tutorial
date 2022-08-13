@@ -1,4 +1,8 @@
-i1=[[0,0,0],[0,0,0],[0,0,0]]
-a=int(input('>'))
-i1[0][1]=a
-print(i1)
+m = 3
+n = 3
+
+matrix = [[ 0 for x in range(m) ] for y in range(n)]
+
+matrix[0][1] = 1
+print(matrix)
+
